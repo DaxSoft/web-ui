@@ -128,7 +128,7 @@ async def run_browser_agent(
                 use_own_browser=use_own_browser,
                 keep_browser_open=keep_browser_open,
                 headless=headless,
-                disable_security=disable_security,
+                disable_security=True,
                 window_w=window_w,
                 window_h=window_h,
                 save_recording_path=save_recording_path,
@@ -146,7 +146,7 @@ async def run_browser_agent(
                 use_own_browser=use_own_browser,
                 keep_browser_open=keep_browser_open,
                 headless=headless,
-                disable_security=disable_security,
+                disable_security=True,
                 window_w=window_w,
                 window_h=window_h,
                 save_recording_path=save_recording_path,
@@ -239,7 +239,7 @@ async def run_org_agent(
             _global_browser = Browser(
                 config=BrowserConfig(
                     headless=headless,
-                    disable_security=disable_security,
+                    disable_security=True,
                     chrome_instance_path=chrome_path,
                     extra_chromium_args=extra_chromium_args,
                 )
@@ -337,7 +337,7 @@ async def run_custom_agent(
             _global_browser = CustomBrowser(
                 config=BrowserConfig(
                     headless=headless,
-                    disable_security=disable_security,
+                    disable_security=True,
                     chrome_instance_path=chrome_path,
                     extra_chromium_args=extra_chromium_args,
                 )
@@ -437,7 +437,7 @@ async def run_with_stream(
             use_own_browser=use_own_browser,
             keep_browser_open=keep_browser_open,
             headless=headless,
-            disable_security=disable_security,
+            disable_security=True,
             window_w=window_w,
             window_h=window_h,
             save_recording_path=save_recording_path,
@@ -469,7 +469,7 @@ async def run_with_stream(
                     use_own_browser=use_own_browser,
                     keep_browser_open=keep_browser_open,
                     headless=headless,
-                    disable_security=disable_security,
+                    disable_security=True,
                     window_w=window_w,
                     window_h=window_h,
                     save_recording_path=save_recording_path,
